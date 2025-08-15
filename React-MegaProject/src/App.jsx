@@ -8,7 +8,6 @@ import Country from './pages/Country';
 import { RouterProvider } from 'react-router-dom';
 import AppLayout from './components/Layout/AppLayout';
 const App = () => {
-
   const router = createBrowserRouter([
      {
       path: "/",
@@ -28,7 +27,7 @@ const App = () => {
     },
     {
      path: "/Country",
-      element: <Country />
+     element: <Country />
     }]}
     ]);
   return (
