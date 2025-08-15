@@ -7,11 +7,13 @@ import Contact from './pages/Contact';
 import Country from './pages/Country';
 import { RouterProvider } from 'react-router-dom';
 import AppLayout from './components/Layout/AppLayout';
+import ErrorPage from './pages/ErrorPage';
 const App = () => {
   const router = createBrowserRouter([
      {
       path: "/",
       element: <AppLayout />,
+      errorElement: <ErrorPage/>,
       children: [{
         
       path: "/",
