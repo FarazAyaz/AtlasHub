@@ -1,6 +1,6 @@
 import countryFacts from "../api/countryData.json";
 
-export const About = () => {
+ const About = () => {
   return (
     <section className="section-about container">
       <h2 className="container-title">
@@ -37,3 +37,4 @@ export const About = () => {
     </section>
   );
 };
+export default About;
