@@ -5,7 +5,6 @@ const Contact = () => {
   const handleFormSubmit = (formdata) => {
   const forminputdata = Object.fromEntries(formdata.entries())
   console.log(forminputdata)
-
   }
   return (
     <section className="section-contact">

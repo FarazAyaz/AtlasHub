@@ -1,11 +1,13 @@
-import React from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const Country = () => {
+
   return (
     <div>
       <h1>country</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Country
+export default Country;
