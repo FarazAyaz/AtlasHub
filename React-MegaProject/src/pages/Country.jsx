@@ -1,7 +1,20 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useTransition } from "react";
+import { getCountryData } from "../api/PostApi";
+import { Loader } from "../components/ui/Loader";
+
 
 const Country = () => {
+  const [isPending, startTransition] = useTransition();
+  useEffect(()=>{
+    startTransition(async() =>{
+      const res = await getCountryData();
+      console.log(res.data);
+    })
+  },[])
+
+  if (isPending) {
+    return <Loader />;
+  }
 
   return (
     <div>
