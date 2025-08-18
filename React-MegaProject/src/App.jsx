@@ -8,6 +8,7 @@ import Country from './pages/Country';
 import { RouterProvider } from 'react-router-dom';
 import AppLayout from './components/Layout/AppLayout';
 import ErrorPage from './pages/ErrorPage';
+import CountryDetails from './components/Layout/CountryDetails';
 const App = () => {
   const router = createBrowserRouter([
      {
@@ -24,13 +25,18 @@ const App = () => {
       element: <About />
     },
     {
-      path: "/contact",
-      element: <Contact />
+      path: "/Country",
+      element: <Country />
     },
     {
-     path: "/Country",
-     element: <Country />
-    }]}
+      path: "/Country/:id",
+      element: <CountryDetails />
+    },
+    {
+      path: "/contact",
+      element: <Contact />
+    }
+  ]}
     ]);
   return (
     <RouterProvider router={router}>  </RouterProvider>
