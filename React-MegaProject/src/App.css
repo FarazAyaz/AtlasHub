@@ -1,3 +1,23 @@
+@media screen and (max-width: 414px) {
+  .section-searchFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  .section-searchFilter input[type="text"],
+  .section-searchFilter button,
+  .section-searchFilter select {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .section-searchFilter > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+}
 /* SearchFilter input styles */
 .section-searchFilter input[type="text"],
 input[type="text"][placeholder="Search Country"] {
@@ -7,15 +27,15 @@ input[type="text"][placeholder="Search Country"] {
   background: #181818;
   color: #fff;
   font-size: 1.6rem;
-  font-family: 'Urbanist', Arial, Helvetica, sans-serif;
+  font-family: "Urbanist", Arial, Helvetica, sans-serif;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 8px rgba(60,60,120,0.08);
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
 }
 .section-searchFilter input[type="text"]:focus,
 input[type="text"][placeholder="Search Country"]:focus {
   border-color: #3a4ed5;
-  box-shadow: 0 4px 16px rgba(60,60,120,0.18);
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.18);
 }
 a,
 a:visited,
@@ -182,6 +202,9 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 100;
+    position: relative;
+    background-color: #000;
 
     & li:first-child {
       margin-top: 1.2rem;
