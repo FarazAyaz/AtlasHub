@@ -422,7 +422,7 @@ ul {
   margin-left: 0.6rem;
 }
 .footer-menu li {
-  display: inline-block;
+  display: flex;
   margin-left: 20px;
 }
 .footer-menu li:hover a {
@@ -431,6 +431,18 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+
+@media screen and (max-width: 440px) {
+  .footer-menu {
+    padding: 0 1.6rem;
+  }
+  .copyright-area {
+    padding: 1.2rem 1.6rem;
+  }
+  .copyright-text {
+    padding: 0.6rem 0;
+  }
 }
 
 /* --------------- 
